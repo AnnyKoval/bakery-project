@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Sweet Presents</title>
+    <style>
+      body {
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-family: cursive;
+        color: #0c056d;
+      }
+      h2 {
+        border: 7px dotted #f8d9fb;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 22px;
+      }
+      p {
+        font-family: Epilogue;
+        font-size: 18px;
+        text-align: justify;
+        font-weight: 200px;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 60px;
+        background-color: #f9ecec;
+        border-radius: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      button {
+        color: #885df1;
+        display: block;
+        margin: 30px auto 30px auto;
+        padding: 20px 30px;
+        font-size: 16px;
+        background: transparent;
+        border: 1px solid #885df1;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        font-family: Epilogue;
+      }
+      button:hover {
+        background: #ffdcf5;
+        color: #c86b85;
+        transition: all 200ms ease-in-out;
+      }
+      .author {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      .email {
+        color: #885df1;
+        display: block;
+        margin: 30px auto 30px auto;
+        padding: 10px 20px;
+        font-size: 12px;
+        background: transparent;
+        border: 1px solid #885df1;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+      .wiki {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🍰
+        <br />
+        Bakery "Sweet Presents"
+      </h1>
+      <h2>🎂 Cakes 🧁 Cupcakes 🍪 Cookies 🍭 Cake-pops</h2>
+      <button class="applyButton">Try sweets</button>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/359/original/2022-05-26_22.38.24.jpg?1653594126"
+        alt="Cakes"
+        width="350"
+      />
+      <p>
+        Please, choose a <strong>cakes</strong> with a various tastes -
+        chocolate, vanilla, fruits, caramel and other.
+        <br />
+        We can make a cake for your event with matching decorations.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/363/original/2022-05-26_22.44.58.jpg?1653594320"
+        alt="Cookies"
+        width="350"
+      />
+      <p>
+        Our <strong>cookies</strong> are stylish and honey, we can make a box
+        with your own design.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/361/original/2022-05-26_22.38.43.jpg?1653594141"
+        alt="Cupcakes"
+        width="350"
+      />
+      <p>
+        Take a look and choose a <strong>cupcakes</strong> with your design and
+        favourite tastes.
+        <br />
+        A cupcake is a small cake designed to serve one person, which may be
+        baked in a small thin paper or aluminum cup. As with larger cakes,
+        frosting and other cake decorations such as fruit and candy may be
+        applied.
+      </p>
+      <div class="wiki">
+        <em
+          >You can learn more about cupcakes on
+          <a href="https://en.wikipedia.org/wiki/Cupcake" target="_blank"
+            >Wikipedia</a
+          >
+        </em>
+      </div>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/360/original/2022-05-26_22.38.34.jpg?1653594134"
+        alt="Cakepops"
+        width="350"
+        high="200"
+      />
+      <p>
+        This sweets are children's favorite treat, this is a
+        <strong>cake pops</strong>.
+        <br />
+        A cake pop is a form of cake styled as a lollipop. Cake crumbs are mixed
+        with icing or chocolate, and formed into small spheres or cubes in the
+        same way as cake balls, before being given a coating of icing, chocolate
+        or other decorations and attached to lollipop sticks.
+      </p>
+      <div class="wiki">
+        <em
+          >You can learn more about cake-pops on
+          <a href="https://en.wikipedia.org/wiki/Cake_pop" target="_blank"
+            >Wikipedia</a
+          >
+        </em>
+      </div>
+      <hr />
+      <button class="email">E-mail news</button>
+      <div class="author">
+        Coded and sweets made by <strong>Anna Koval</strong>
+      </div>
+    </div>
+    <script>
+      function nameButton() {
+        let name = prompt("What is your name?");
+        let phone = prompt(
+          "Please, leave your phone number and we will call you back!"
+        );
+        let button = document.querySelector(".applyButton");
+        alert("Thank you, " + name + "! We will call you in 30 sec.");
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", nameButton);
+      function emailNews() {
+        let mail = prompt("Are you intersted in our news?");
+        let button = document.querySelector(".email");
+        if (
+          mail === "yes" ||
+          mail === "Yes" ||
+          mail === "YES" ||
+          mail === "ok" ||
+          mail === "OK"
+        ) {
+          alert("😍 We'll keep in touch");
+        } else {
+          alert("OK, have a nice day!");
+        }
+      }
+      let button = document.querySelector(".email");
+      button.addEventListener("click", emailNews);
+    </script>
+  </body>
+</html>
